@@ -107,8 +107,6 @@ print(dict_area_occurance)
 
 # 5 
 # Calculating Maximum Hurricane Count
-
-
 # find most frequently affected area and the number of hurricanes involved in
 def most_hurricanes():
   hurricane_count = dict_area_occurance.values()  
@@ -123,7 +121,7 @@ print(most_hurricanes())
 
 # 6
 # Calculating the Deadliest Hurricane
-
+# find highest mortality hurricane and the number of deaths
 def deadliest_hurricane():
   largest_death_count = max(deaths)
   for i in list(range(len(deaths))):
@@ -131,7 +129,7 @@ def deadliest_hurricane():
       return ("The hurricanes caused the greatest number of death is  " + names[i] + " , and the number of deaths is " + str(largest_death_count) +".")
 print(deadliest_hurricane())
 
-# find highest mortality hurricane and the number of deaths
+
 
 # 7
 # Rating Hurricanes by Mortality
@@ -190,6 +188,7 @@ print(dict_whole_by_mortality )
 
 
 # 8 Calculating Hurricane Maximum Damage
+# find highest damage inducing hurricane and its total cost
 damages = ['Damages not recorded', '100M', 'Damages not recorded', '40M', '27.9M', '5M', 'Damages not recorded', '306M', '2M', '65.8M', '326M', '60.3M', '208M', '1.42B', '25.4M', 'Damages not recorded', '1.54B', '1.24B', '7.1B', '10B', '26.5B', '6.2B', '5.37B', '23.3B', '1.01B', '125B', '12B', '29.4B', '1.76B', '720M', '15.1B', '64.8B', '91.6B', '25.1B']
 
 numeric_damages_list = []
@@ -209,9 +208,6 @@ def most_damaged_hurricane():
       return ("The hurricane that caused the greatest damage is " + names[i] + " and it costs " + str(most_damages) + ".")
 print(most_damaged_hurricane())
 
-# test function by updating damages
-
-# find highest damage inducing hurricane and its total cost
 
 
 # 9
@@ -257,8 +253,8 @@ def rate_by_damages(rate):
 
 print(rate_by_damages(2))
 print(rate_by_damages(3))
-# categorize hurricanes in new dictionary with damage severity as key
 
+# categorize hurricanes in new dictionary with damage severity as key
 dict_whole_by_damages = {}
 i = 1
 def dict_by_damages():
