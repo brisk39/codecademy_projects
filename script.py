@@ -21,6 +21,7 @@ deaths = [90,4000,16,3103,179,184,408,682,5,1023,43,319,688,259,37,11,2068,269,3
 
 # 1
 # Update Recorded Damages
+# the usage of function, control flow, and string slicing
 conversion = {"M": 1000000,
               "B": 1000000000}
 damage = ""
@@ -40,6 +41,8 @@ print(update_damages("6.2B"))
 # 2 
 # Create a Table
 # Parameter = [Name, Month, Year,Max Sustained Wind, Areas Affected, Damage, Death]
+# the usage of string.index(), dictionary formatting
+
 Name = ""
 def hurricane_data(Name):
   index = names.index(Name)
@@ -52,6 +55,7 @@ print(hurricane_data("Michael"))
 
 # 3
 # Organizing by Year
+# the usage of function, control flow, list comprehensions, list.append(), dictionary formatting
 def hurricane_data_by_year(Year):
   if Year in years:
     year_index =  [i for i, e in enumerate(years) if e == Year]
@@ -73,7 +77,7 @@ print(hurricane_data_by_year(2020))
 
 # 4
 # Counting Damaged Areas
-
+# the usage of function, control flow, list.append(), zip(), building dictionary with key:value pairs
 def occurances_of_hurricanes(area):
   count = 0
   for region in areas_affected:
@@ -85,7 +89,6 @@ print(occurances_of_hurricanes("United States Gulf Coast (especially Florida Pan
 print(occurances_of_hurricanes("Texas"))
 
 # create dictionary of areas to store the number of hurricanes involved in
-
 unique_areas_affected = []
 region = []
 area = ""
@@ -108,6 +111,7 @@ print(dict_area_occurance)
 # 5 
 # Calculating Maximum Hurricane Count
 # find most frequently affected area and the number of hurricanes involved in
+# the usage of function, control flow, dict.values(), list slicing, max(), range(), len(), string formatting
 def most_hurricanes():
   hurricane_count = dict_area_occurance.values()  
   hurricane_count_list = list(hurricane_count)
@@ -122,6 +126,7 @@ print(most_hurricanes())
 # 6
 # Calculating the Deadliest Hurricane
 # find highest mortality hurricane and the number of deaths
+# the usage of function, control flow, dict.values(), list slicing, range(), len(), string formatting
 def deadliest_hurricane():
   largest_death_count = max(deaths)
   for i in list(range(len(deaths))):
@@ -133,6 +138,7 @@ print(deadliest_hurricane())
 
 # 7
 # Rating Hurricanes by Mortality
+# the usage of function, control flow, list slicing, dict.update()
 mortality_scale = {0: 0,
                    1: 100,
                    2: 500,
@@ -189,6 +195,7 @@ print(dict_whole_by_mortality )
 
 # 8 Calculating Hurricane Maximum Damage
 # find highest damage inducing hurricane and its total cost
+# the usage of function, control flow, list slicing, list.append(), max(), range(), len(), string formatting
 damages = ['Damages not recorded', '100M', 'Damages not recorded', '40M', '27.9M', '5M', 'Damages not recorded', '306M', '2M', '65.8M', '326M', '60.3M', '208M', '1.42B', '25.4M', 'Damages not recorded', '1.54B', '1.24B', '7.1B', '10B', '26.5B', '6.2B', '5.37B', '23.3B', '1.01B', '125B', '12B', '29.4B', '1.76B', '720M', '15.1B', '64.8B', '91.6B', '25.1B']
 
 numeric_damages_list = []
@@ -212,6 +219,7 @@ print(most_damaged_hurricane())
 
 # 9
 # Rating Hurricanes by Damage
+# the usage of function, control flow, list slicing, list.append(), dict.update()
 damage_scale = {0: 0,
                 1: 100000000,
                 2: 1000000000,
