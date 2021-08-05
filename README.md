@@ -1,5 +1,5 @@
 # codecademy_projects 
-# codecademy_projects - hurricanes
+## codecademy_projects - hurricanes
 The project is about hurricanes.  
 The goal is to organize and manipulate data about Category 5 Hurricanes, the strongest hurricanes as rated by their wind speed. 
 Each one of these functions will use a number of parameters, conditionals, lists, dictionaries, string manipulation, and return statements.
@@ -24,7 +24,7 @@ In order to apply what I learned into practice, a solid grasp of function, contr
 Wish you good luck on this project.
 
 
-# codecademy_projects - hurricanes
+## codecademy_projects - hurricanes
 The jeopardy project requires one to have a solid understanding of dataframe and there are serval stages of processing the data. 
 Data cleaning requires checking column names and renaming column names in a proper format without unexpected spaces, and the basic analysis of the data involves aggregating the data, and the further analyses involve the application of list comprehension, setting up new columns, slicing rows under certain conditions, and defining functions with or without the help of lambda function.
 
